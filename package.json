@@ -1,0 +1,18 @@
+{
+  "name": "galleryweb-static",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GalleryWeb: portfolio fotografico statico, pubblicabile su GitHub Pages e modificabile con Pages CMS",
+  "scripts": {
+    "build": "node build.mjs",
+    "import": "node scripts/import-backup.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "sanitize-html": "^2.13.0"
+  }
+}

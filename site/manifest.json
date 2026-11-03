@@ -1,0 +1,19 @@
+{
+  "name": "GalleryWeb - Portfolio Fotografico",
+  "short_name": "GalleryWeb",
+  "description": "Portfolio fotografico e journal personale",
+  "lang": "it",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Benvenuto",
+  "menu_label": "Home",
+  "published": true,
+  "show_in_menu": true,
+  "is_home": true,
+  "menu_order": 0,
+  "excerpt": "Contenuto di esempio: sostituiscilo con il tuo.",
+  "seo_description": "",
+  "hero": {
+    "image": "",
+    "title": "Il Mio Portfolio",
+    "subtitle": "Fotografia, arte e pensiero",
+    "text_position": "center",
+    "overlay_opacity": 45,
+    "height_variant": "large"
+  },
+  "blocks": [
+    {
+      "type": "text",
+      "content": "<p>Questa è la home di esempio. Modificala da Pages CMS oppure importa i contenuti del vecchio sito.</p>"
+    },
+    {
+      "type": "quote",
+      "text": "La fotografia è la verità, e il cinema è la verità 24 volte al secondo.",
+      "author": "Jean-Luc Godard"
+    }
+  ]
+}

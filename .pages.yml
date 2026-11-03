@@ -1,0 +1,192 @@
+media:
+  input: site/uploads
+  output: /uploads
+  rename: safe
+  extensions: [jpg, jpeg, png, webp, gif]
+
+content:
+  - name: sections
+    label: Pagine e sezioni
+    type: collection
+    path: content/sections
+    format: json
+    subfolders: false
+    exclude: [".gitkeep"]
+    filename:
+      template: "{primary}.json"
+      field: create
+    view:
+      primary: title
+      fields: [title, menu_order, published, is_home]
+      sort: [menu_order]
+    fields:
+      - name: title
+        label: Titolo
+        type: string
+        required: true
+      - name: menu_label
+        label: Voce di menu
+        type: string
+        description: Testo mostrato nel menu di navigazione.
+      - name: published
+        label: Pubblicata
+        type: boolean
+        default: true
+      - name: show_in_menu
+        label: Mostra nel menu
+        type: boolean
+        default: true
+      - name: is_home
+        label: Usa come Home
+        type: boolean
+        default: false
+      - name: menu_order
+        label: Ordine nel menu
+        type: number
+        default: 10
+        description: Numeri più bassi appaiono prima.
+      - name: excerpt
+        label: Sommario
+        type: text
+      - name: seo_description
+        label: Descrizione per i motori di ricerca
+        type: text
+      - name: hero
+        label: Immagine di testata
+        type: object
+        fields:
+          - name: image
+            label: Immagine
+            type: image
+          - name: title
+            label: Titolo
+            type: string
+          - name: subtitle
+            label: Sottotitolo
+            type: string
+          - name: text_position
+            label: Posizione del testo
+            type: select
+            default: center
+            options:
+              values:
+                - name: left
+                  label: Sinistra
+                - name: center
+                  label: Centro
+                - name: right
+                  label: Destra
+          - name: height_variant
+            label: Altezza
+            type: select
+            default: medium
+            options:
+              values:
+                - name: full
+                  label: Schermo intero
+                - name: large
+                  label: Grande
+                - name: medium
+                  label: Media
+                - name: small
+                  label: Piccola
+          - name: overlay_opacity
+            label: Opacità overlay (0-100)
+            type: number
+            default: 45
+            options:
+              min: 0
+              max: 100
+      - name: blocks
+        label: Contenuti
+        type: block
+        list: true
+        blockKey: type
+        blocks:
+          - name: text
+            label: Testo
+            fields:
+              - name: content
+                label: Testo
+                type: rich-text
+                options:
+                  format: html
+                  media: false
+          - name: gallery
+            label: Galleria
+            fields:
+              - name: images
+                label: Foto
+                type: object
+                list: true
+                fields:
+                  - name: image
+                    label: Foto
+                    type: image
+                  - name: caption
+                    label: Didascalia
+                    type: string
+                  - name: alt
+                    label: Testo alternativo
+                    type: string
+          - name: image
+            label: Immagine singola
+            fields:
+              - name: image
+                label: Foto
+                type: image
+              - name: caption
+                label: Didascalia
+                type: string
+              - name: alt
+                label: Testo alternativo
+                type: string
+          - name: quote
+            label: Citazione
+            fields:
+              - name: text
+                label: Citazione
+                type: text
+              - name: author
+                label: Autore
+                type: string
+          - name: video
+            label: Video (YouTube o Vimeo)
+            fields:
+              - name: url
+                label: Link del video
+                type: string
+              - name: caption
+                label: Didascalia
+                type: string
+          - name: separator
+            label: Separatore
+            fields: []
+
+  - name: settings
+    label: Impostazioni del sito
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: site_title
+        label: Titolo del sito
+        type: string
+      - name: site_tagline
+        label: Sottotitolo
+        type: string
+      - name: accent_color
+        label: Colore principale (es. #c9a24b)
+        type: string
+      - name: footer_text
+        label: Testo del footer
+        type: string
+      - name: social_instagram
+        label: Link Instagram
+        type: string
+      - name: social_facebook
+        label: Link Facebook
+        type: string
+      - name: contact_email
+        label: Email di contatto
+        type: string
