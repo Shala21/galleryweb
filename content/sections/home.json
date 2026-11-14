@@ -22,16 +22,6 @@
       "type": "quote",
       "text": "La fotografia è la verità, e il cinema è la verità 24 volte al secondo.",
       "author": "Jean-Luc Godard"
-    },
-    {
-      "type": "gallery",
-      "images": [
-        {
-          "image": "/uploads/mstile-150x150.png",
-          "caption": "corona",
-          "alt": "sotto la testa"
-        }
-      ]
     }
   ]
 }
