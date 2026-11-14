@@ -6,14 +6,12 @@
   "is_home": true,
   "menu_order": 0,
   "excerpt": "Contenuto di esempio: sostituiscilo con il tuo.",
-  "seo_description": "",
   "hero": {
-    "image": "",
     "title": "Il Mio Portfolio",
     "subtitle": "Fotografia, arte e pensiero",
     "text_position": "center",
-    "overlay_opacity": 45,
-    "height_variant": "large"
+    "height_variant": "large",
+    "overlay_opacity": 45
   },
   "blocks": [
     {
@@ -24,6 +22,16 @@
       "type": "quote",
       "text": "La fotografia è la verità, e il cinema è la verità 24 volte al secondo.",
       "author": "Jean-Luc Godard"
+    },
+    {
+      "type": "gallery",
+      "images": [
+        {
+          "image": "/uploads/mstile-150x150.png",
+          "caption": "corona",
+          "alt": "sotto la testa"
+        }
+      ]
     }
   ]
 }
