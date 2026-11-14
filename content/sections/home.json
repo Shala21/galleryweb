@@ -16,7 +16,7 @@
   "blocks": [
     {
       "type": "text",
-      "content": "<p>Questa è la home di esempio. Modificala da Pages CMS oppure importa i contenuti del vecchio sito.</p>"
+      "content": "<p></p>"
     },
     {
       "type": "quote",
