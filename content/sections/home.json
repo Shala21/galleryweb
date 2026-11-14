@@ -11,7 +11,7 @@
     "title": "Il Mio Portfolio",
     "subtitle": "Fotografia, arte e pensiero",
     "text_position": "center",
-    "height_variant": "large",
+    "height_variant": "full",
     "overlay_opacity": 45
   },
   "blocks": [
