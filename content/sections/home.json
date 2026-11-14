@@ -7,11 +7,10 @@
   "menu_order": 0,
   "excerpt": "Contenuto di esempio: sostituiscilo con il tuo.",
   "hero": {
-    "image": "/uploads/mstile-150x150-1.png",
     "title": "Il Mio Portfolio",
     "subtitle": "Fotografia, arte e pensiero",
     "text_position": "center",
-    "height_variant": "full",
+    "height_variant": "large",
     "overlay_opacity": 45
   },
   "blocks": [
